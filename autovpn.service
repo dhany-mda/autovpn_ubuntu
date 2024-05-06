@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto VPN
+After=network.target
+
+[Service]
+#User=icodes
+#Group=icodes
+WorkingDirectory=/home/icodes/Auto_VPN/
+ExecStart=/home/icodes/Auto_VPN/vpn_connect.sh
+
+[Install]
+WantedBy=multi-user.target
